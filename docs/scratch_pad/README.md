@@ -7,6 +7,10 @@ It'll include how I setup stuff, things I learned, things I need to remember, an
 
 ## Things to remember
 Go lookup why I would use SysExit(main()) for python code
+Add XP for levels
+- Remember XP Multipiers 
+
+Add Random Elements for Damage Dealt and Recieved
 
 ## Things I did
 Setup the entire thing as a module.  So I could handle imports better
@@ -130,3 +134,25 @@ def test_add_duplicate_user(user_manager):
 
 To get some pytesting working ad really just understand how it works.
 Did some youtubing and some google sleuthing to figure thus one out in detail.
+
+## Character Implementation Stuff - 1.27
+I decided today I'm going to ease into this very slowly and one piece at a time.
+For now I am going to build out very basic level functionality for all of the classes I create.
+
+Right now I have a guild class with a name and nothing else.
+I'm adding in a base character class that will act as a parent class.
+Next an "Adventurer" class that is borning and has no multipiers
+Then I created a Warrior class that has 10% more health and takes (about)10% less damage and deals 10% more damage
+
+Next up will be to create a list of characters that are in a guild.
+Then I will create a quest class that will give us a quest that can be assigned.
+
+Thinking I might have a question collection class rather than just a list of all quests but we will see.
+After that we will have a guild method to accept a quest, choose a party, (will need a party class) then an 'evaluate quest' method to see if they succeeded or failed, and determine what happened to the party.
+
+All of this will start easy with just the two classes and one party member in a question, but I'll try to build out all the scaffloding.
+At the end of the quest we will just adjust health for now, eventually we will add xp and then injuries
+
+For now I am commiting the character class changes. 
+
+
