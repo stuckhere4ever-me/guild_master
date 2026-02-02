@@ -1,5 +1,6 @@
 from __future__ import annotations
 from typing import List
+from guild_master.character import Character
 
 
 class Guild:
@@ -7,10 +8,17 @@ class Guild:
 
     def __init__(self, name:str):
         self.__name = name
+        self.available_characters = []
 
 
     def get_name(self) -> str:
         return self.__name
+
+    def add_character(self, new_character:Character) -> None:
+        self.available_characters.append(new_character)
+
+    def remove_character(self, character_to_remove:Character) -> None:
+        self.available_characters.remove(character_to_remove)
 
 
     def __eq__(self,other:object) -> bool:

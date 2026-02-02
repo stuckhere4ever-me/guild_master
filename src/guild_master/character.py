@@ -25,7 +25,9 @@ class Character:
     def take_damage(self, damage) -> None:
         self.health -= damage
     
-
+    # Needs to be overwritten by character class
+    def deal_damage(self, damage) -> int:
+        raise NotImplemented
 
 
     def __eq__(self,other:object) -> bool:

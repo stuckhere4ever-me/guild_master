@@ -156,3 +156,4 @@ At the end of the quest we will just adjust health for now, eventually we will a
 For now I am commiting the character class changes. 
 
 
+## February 2nd - Character List and Quest Stuff
